@@ -12,8 +12,6 @@ export class VendaController {
                 dataFim: req.query.dataFim as string
             };
 
-            console.log("Filtros recebidos:", filtros); 
-
             const vendas = await VendaModel.listarVendas(filtros);
 
             return res.status(200).json(vendas);

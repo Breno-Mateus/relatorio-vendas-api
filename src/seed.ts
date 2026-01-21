@@ -22,7 +22,7 @@ const seed = () => {
                 console.error("Erro ao limpar tabela:", err.message);
                 return;
             }
-            console.log("🧹 Tabela limpa.");
+            console.log("Tabela limpa.");
         });
 
         const stmt = db.prepare("INSERT INTO vendas (produto, categoria, quantidade, valor_total, data_venda) VALUES (?, ?, ?, ?, ?)");
